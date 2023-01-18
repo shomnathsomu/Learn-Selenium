@@ -4,7 +4,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class TestCase2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		// Firefox webdriver => driver directory
 		// webdriver.chrome.driver => D:\chromedriver_win32\chromedriver.exe
