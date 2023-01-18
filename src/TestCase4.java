@@ -9,19 +9,32 @@ public class TestCase4 {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		/*
+		
 		driver.get("https://login.salesforce.com/"); 
 		
 		// Locator identifiers
 		// ID/ ClassName/ Name/
 		driver.findElement(By.id("username")).sendKeys("shomnathsomu");
 		driver.findElement(By.name("pw")).sendKeys("1234567890");
+		
+		// Create the Xpath for the Login button
+		driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();
+		
+		// Create the CSS selector for the text link
+		driver.findElement(By.cssSelector("#forgot_password_link")).click();
+		
+		driver.findElement(By.xpath("//*[@id=\"un\"]")).sendKeys("shomnath.pramanik@bjitgroup.com");
+		driver.findElement(By.cssSelector("#continue")).click();
+		
+		/*
+		// Classes should not have spaces - Compound classes cannot be accepted
 		driver.findElement(By.className("button r4 wide primary")).click();
 		*/
 		
-		driver.get("https://www.hackerrank.com/auth/login");
+		//driver.get("https://www.hackerrank.com/auth/login");
 		
-		driver.findElement(By.className("input")).sendKeys("shomnathsomu");
+		// multiple values - Selenium identifies the first one = scans from the top left
+		//driver.findElement(By.className("input")).sendKeys("shomnathsomu");
 		
 		//driver.close();
 	}
