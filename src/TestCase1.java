@@ -11,12 +11,24 @@ public class TestCase1 {
 		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
 		
 		// Create driver object for the Chrome browser
-		WebDriver gcDriver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 	
-		gcDriver.get("https://bjitgroup.com/");
+		//driver.get("https://bjitgroup.com/");
+		driver.get("https://login.salesforce.com/");
 		
-		// Get the Title of the website
-		System.out.println(gcDriver.getTitle());
+		//System.out.println(driver.getTitle()); // validate if your Page title is correct
+		
+		//System.out.println(driver.getCurrentUrl()); // validate if you are landed on the correct URL
+		
+		//System.out.println(driver.getPageSource()); // print the page source code
+		
+		driver.get("https://www.oxfordlearnersdictionaries.com/");
+		
+		driver.navigate().back();
+		//driver.navigate().forward();
+		
+		//driver.close(); // it closes the current browser only
+		//driver.quit(); // it closes all the browsers opened by Selenium script
 				
 	}
 
