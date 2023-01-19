@@ -26,6 +26,12 @@ public class TestCase3 {
 		
 		//driver.close();
 
+		//driver.get("https://www.hackerrank.com/auth/login");
+		
+		// multiple values - Selenium identifies the first one = scans from the top left
+		//driver.findElement(By.className("input")).sendKeys("shomnathsomu");
+		
+		//driver.close();
 	}
 
 }
