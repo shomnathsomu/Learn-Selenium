@@ -6,7 +6,7 @@ public class TestCase3 {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.gecko.driver", "D:\\\\Webdrivers\\\\geckodriver-v0.32.0-win64\\\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "D:\\Webdrivers\\geckodriver-v0.32.0-win64\\geckodriver.exe");
 		
 		WebDriver driver = new FirefoxDriver();
 		
