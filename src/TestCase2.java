@@ -6,7 +6,7 @@ public class TestCase2 {
 	public static void main(String[] args) {
 		
 		// Firefox webdriver => driver directory
-		// webdriver.chrome.driver => D:\chromedriver_win32\chromedriver.exe
+		// webdriver.gecko.driver => D:\\Webdrivers\\geckodriver-v0.32.0-win64\\geckodriver.exe
 		System.setProperty("webdriver.gecko.driver", "D:\\Webdrivers\\geckodriver-v0.32.0-win64\\geckodriver.exe");
 		
 		// Create driver object for the Firefox browser
