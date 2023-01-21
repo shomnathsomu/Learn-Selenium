@@ -10,10 +10,21 @@
 6. Page navigate [Forward and Backward]
 7. Current browser and all browser close operation
 
-
 ### TestCase2
 1. Run selenium with the Firefox web driver
 2. Set Firefox webdriver with driver directory 
 [webdriver.chrome.driver <= D:\\Webdrivers\\geckodriver-v0.32.0-win64\\geckodriver.exe]
 3. Create driver object for the Firefox browser
 4. Get the Title of the website
+
+### TestCase3
+1. Locator identifiers [ID/ ClassName/ Name/ linkText/ Xpath/ Css]
+2. Create an object of a class
+3. Pass the parameters to the methods
+4. Check how multiple values work- Selenium identifies the first one and scans from the top left
+
+### TestCase4
+1. Create the Xpath for the Login button
+2. Create the CSS selector for the text link
+3. Classes should not have spaces - Compound classes cannot be accepted
+4. Validate the error message from the Form fields
