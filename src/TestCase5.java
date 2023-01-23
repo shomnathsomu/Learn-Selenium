@@ -12,14 +12,25 @@ public class TestCase5 {
 		driver.get("https://login.salesforce.com/");
 		
 		// Locator identifiers
-		// ID/ ClassName/ Name/
-		driver.findElement(By.id("username")).sendKeys("shomnathsomu");
-		driver.findElement(By.name("pw")).sendKeys("1234567890");
+		// Xpath/ Css
 		
-		// Create customised Xpath from HTML attributes for the Login button
+		// Xpath format: //tagName=[@attribute='value']
+		
+		/*
+		//Create customized Xpath from HTML attributes
+		driver.findElement(By.xpath("//*[@type=\"email\"]")).sendKeys("shomnath@gmail.com");
+		driver.findElement(By.xpath("//input[@name=\"pw\"]")).sendKeys("123456789");
 		driver.findElement(By.xpath("//input[@value=\"Log In\"]")).click();
+		*/
 		
-		// Create customised CSS from HTML attributes for the Login button
+		//cssSelector format: tagName=[attribute='value']
+		//cssSelector format(if tagName has an id): tagName#idValue or #idValue
+		//cssSelector format(if tagName has a class): tagName.classValue
+		
+		// Create customized CSS from HTML attributes
+		driver.findElement(By.cssSelector("input[name=\"username\"]")).sendKeys("shomnath@gmail.com");
+		driver.findElement(By.cssSelector("input[type=\"password\"]")).sendKeys("12314546");
+		driver.findElement(By.cssSelector("[type=\"submit\"]")).click();
 	}
 
 }
