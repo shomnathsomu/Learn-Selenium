@@ -14,7 +14,7 @@ public class TestCase5 {
 		// Locator identifiers
 		// Xpath/ Css
 		
-		// Xpath format: //tagName=[@attribute='value']
+		// Xpath format: //tagName[@attribute='value']
 		
 		/*
 		//Create customized Xpath from HTML attributes
@@ -23,7 +23,7 @@ public class TestCase5 {
 		driver.findElement(By.xpath("//input[@value=\"Log In\"]")).click();
 		*/
 		
-		//cssSelector format: tagName=[attribute='value']
+		//cssSelector format: tagName[attribute='value']
 		//cssSelector format(if tagName has an id): tagName#idValue or #idValue
 		//cssSelector format(if tagName has a class): tagName.classValue
 		
