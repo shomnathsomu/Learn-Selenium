@@ -9,17 +9,19 @@ public class TestCase6 {
 		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://login.salesforce.com/");
+		driver.get("https://www.rediff.com/");
 				
 		// Locator identifiers
 		// Xpath/ Css
 		
 		// Xpath format for Regular Expression: //tagName[contains(@attribute, 'value')]
-		driver.findElement(By.xpath("//*[@type=\"email\"]")).sendKeys("shomnath@gmail.com");
-		driver.findElement(By.xpath("//input[contains(@name, \"pw\")]")).sendKeys("123456789");
-		driver.findElement(By.xpath("//input[contains(@value, \"Log In\")]")).click();
 		
-		// Xpath format for Regular Expression: //tagName[attribute*='value']
+		
+		// cssSelector format for Regular Expression: 
+		// tagName[attribute*='value']
+		// tagName#id
+		// tagName.classname
+		driver.findElement(By.cssSelector("a[title*=\"Sign in\"]")).click();
 
 	}
 
