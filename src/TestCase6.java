@@ -10,7 +10,7 @@ public class TestCase6 {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.rediff.com/");
-				
+		
 		// Locator identifiers
 		// Xpath/ Css
 		
@@ -21,7 +21,14 @@ public class TestCase6 {
 		// tagName[attribute*='value']
 		// tagName#id
 		// tagName.classname
+		
+		// Customized xpath and css practices
+		// Created customized Xpath and cssSelector with regular expressions
 		driver.findElement(By.cssSelector("a[title*=\"Sign in\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"login1\"]")).sendKeys("shomnathsomu");
+		driver.findElement(By.cssSelector("input#password")).sendKeys("123455");
+		driver.findElement(By.xpath("//input[contains(@class, \"signin\")]")).click();
+		
 
 	}
 
