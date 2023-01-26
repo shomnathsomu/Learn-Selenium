@@ -28,3 +28,12 @@
 2. Create the CSS selector for the text link
 3. Classes should not have spaces - Compound classes cannot be accepted
 4. Validate the error message from the Form fields
+
+### TestCase5
+1. Locator identifiers: Xpath/ Css
+2. Xpath format: //tagName=[@attribute='value']
+3. Create customized Xpath from HTML attributes
+4. cssSelector format: tagName=[attribute='value']
+5. cssSelector format(if tagName has an id): tagName#idValue or #idValue
+6. cssSelector format(if tagName has a class): tagName.classValue
+7. Create customized CSS from HTML attributes
