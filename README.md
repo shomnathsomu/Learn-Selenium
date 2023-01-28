@@ -37,3 +37,9 @@
 5. cssSelector format(if tagName has an id): tagName#idValue or #idValue
 6. cssSelector format(if tagName has a class): tagName.classValue
 7. Create customized CSS from HTML attributes
+
+### TestCase6
+1. Xpath format for Regular Expression: //tagName[contains(@attribute, 'value')]
+2. cssSelector format for Regular Expression: tagName[attribute*='value']/tagName#id/tagName.classname
+3. Customized xpath and css practices
+4. Created customized Xpath and cssSelector with regular expressions
