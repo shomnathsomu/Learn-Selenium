@@ -1,7 +1,7 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+//import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestCase7 {
@@ -16,9 +16,14 @@ public class TestCase7 {
 		// Identify Xpath with parent child traverse relationship
 		//driver.findElement(By.xpath("//*[@id=\"gbwa\"]/div/a")).click();
 		
-		WebElement searchBox = driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
-		searchBox.sendKeys("অহর্নিশ অর্থ");
-		searchBox.sendKeys(Keys.ENTER);
+		/*
+		 * WebElement searchBox = driver.findElement(By.xpath(
+		 * "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
+		 * searchBox.sendKeys("অহর্নিশ অর্থ"); searchBox.sendKeys(Keys.ENTER);
+		 */
+		
+		// Xpath practices
+		driver.findElement(By.xpath("//div[@class='LX3sZb']/div/div/div[1]/div/div[2]/a")).click();
 	}
 
 }
