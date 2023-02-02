@@ -1,5 +1,7 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestCase7 {
@@ -11,8 +13,12 @@ public class TestCase7 {
 		
 		driver.get("https://www.google.com/");
 		
-		//driver.findElement(By.xpath("//div[@class='gb_Ve']/div[1]/div/div/a/svg")).click();
-		driver.findElement(By.cssSelector("#gbwa > div > a > svg")).click();
+		// Identify Xpath with parent child traverse relationship
+		//driver.findElement(By.xpath("//*[@id=\"gbwa\"]/div/a")).click();
+		
+		WebElement searchBox = driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
+		searchBox.sendKeys("অহর্নিশ অর্থ");
+		searchBox.sendKeys(Keys.ENTER);
 	}
 
 }
