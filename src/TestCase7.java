@@ -23,6 +23,8 @@ public class TestCase7 {
 		 */
 		
 		// Xpath practices
+		// Relative Xpath doesn't depend on parent nodes
+		// Absolute Xpath is the parent/child nodes traverse
 		driver.findElement(By.xpath("//div[@class='LX3sZb']/div/div/div[1]/div/div[2]/a")).click();
 	}
 
