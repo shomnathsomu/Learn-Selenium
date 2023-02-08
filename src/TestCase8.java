@@ -20,6 +20,7 @@ public class TestCase8 {
 		
 		// Identifying objects with Text using Xpath locators
 		driver.findElement(By.xpath("//*[text()='JOIN NOW']")).click();
+		driver.findElement(By.xpath("//*[text()='Log in']")).click();
 		
 	}
 
