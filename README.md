@@ -43,3 +43,12 @@
 2. cssSelector format for Regular Expression: tagName[attribute*='value']/tagName#id/tagName.classname
 3. Customized xpath and css practices
 4. Created customized Xpath and cssSelector with regular expressions
+
+### TestCase7
+1. Identify Xpath with parent child traverse relationship
+2. Xpath practices [ Relative Xpath doesn't depend on parent nodes and Absolute Xpath is the parent/child nodes traverse]
+
+### TestCase8
+1. Traverse to the sibling element using Xpath
+2. Traverse to the parent element using Xpath
+3. Identifying objects with Text() function using Xpath locators
