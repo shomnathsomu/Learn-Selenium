@@ -13,9 +13,9 @@ public class TestCase9 {
 		driver.get("https://login.salesforce.com/");
 		
 		//	CSS selectors locators
-		driver.findElement(By.cssSelector("input[name='username']")).sendKeys("shomnathsomu");
-		driver.findElement(By.cssSelector("input#password")).sendKeys("123456");
-		driver.findElement(By.cssSelector("input[value='Log In']")).click();
+		driver.findElement(By.cssSelector("input[name='username']")).sendKeys("shomnathsomu"); // Using attribute and value
+		driver.findElement(By.cssSelector("input#password")).sendKeys("123456"); // using ID
+		driver.findElement(By.cssSelector("input.button.r4.wide.primary")).click(); // using Class
 	}
 
 }
