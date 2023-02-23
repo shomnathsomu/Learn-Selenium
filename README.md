@@ -52,3 +52,6 @@
 1. Traverse to the sibling element using Xpath
 2. Traverse to the parent element using Xpath
 3. Identifying objects with Text() function using Xpath locators
+
+### TestCase9
+1. CSS selectors locators [Using attribute and value, ID, class]
