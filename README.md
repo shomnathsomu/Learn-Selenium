@@ -55,3 +55,7 @@
 
 ### TestCase9
 1. CSS selectors locators [Using attribute and value, ID, class]
+
+### TestCase10
+1. Handling static dropdown with select webdriver API
+2. Select static dropdown by visibleText/Index/Value
