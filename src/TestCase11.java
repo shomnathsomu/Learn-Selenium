@@ -24,7 +24,7 @@ public class TestCase11 {
 		// go to the website
 		driver.get("https://www.easemytrip.com/flights.html");
 		
-		// Handle the dynamic drop-down
+		// Handle the latest drop-down looping UI
 		// Click on the TRAVELLER & CLASS drop-down
 		driver.findElement(By.id("trvlr_colm")).click();
 		
@@ -45,6 +45,9 @@ public class TestCase11 {
 		
 		// Confirm the TRAVELLERS & CLASS
 		driver.findElement(By.id("traveLer")).click();
+		
+		// Print the traveler number with text
+		System.out.println(driver.findElement(By.id("ptravlrNo")).getText());
 		
 		//driver.close();
 		
