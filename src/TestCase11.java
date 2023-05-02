@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class TestCase11 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
 		
@@ -23,6 +23,14 @@ public class TestCase11 {
 		
 		// go to the website
 		driver.get("https://www.easemytrip.com/flights.html");
+		
+		// Click on the from city drop-down
+		driver.findElement(By.id("frmcity")).click();
+		
+		Thread.sleep(2000);
+		
+		// Parent-Child relationship locator to Identify the objects Uniquely
+		driver.findElement(By.xpath("//div[@id='fromautoFill'] //span[@id='spn6']")).click();
 		
 		// Handle the latest drop-down looping UI
 		// Click on the TRAVELLER & CLASS drop-down
