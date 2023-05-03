@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="My Package(failed)">
+    <classes>
+      <class name="myTestSuite.E2Esearch">
+        <methods>
+          <include name="TestCase1"/>
+        </methods>
+      </class> <!-- myTestSuite.E2Esearch -->
+    </classes>
+  </test> <!-- My Package(failed) -->
+</suite> <!-- Failed suite [Suite] -->
