@@ -36,7 +36,7 @@ public class TestCase11 {
 		
 		driver.findElement(By.id("dvfarecal")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@id='dvcalendar']/div/div[1]/div/div[3]/ul/li[3]")).click();
+		driver.findElement(By.xpath("//div[@id='dvcalendar']/div/div[1]/div/div[3]/ul/li[@class='active-date']")).click();
 		
 		// Handle the latest drop-down looping UI
 		// Click on the TRAVELLER & CLASS drop-down
