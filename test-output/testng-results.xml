@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-03T11:53:07 BDT" name="Default suite" finished-at="2023-05-03T11:53:07 BDT" duration-ms="55">
+  <suite started-at="2023-05-03T16:30:29 BDT" name="Suite" finished-at="2023-05-03T16:32:09 BDT" duration-ms="100317">
     <groups>
     </groups>
-    <test started-at="2023-05-03T11:53:07 BDT" name="Default test" finished-at="2023-05-03T11:53:07 BDT" duration-ms="55">
-      <class name="TestSuite1">
-        <test-method signature="TestCase1()[pri:0, instance:TestSuite1@4b0d79fc]" started-at="2023-05-03T11:53:07 BDT" name="TestCase1" finished-at="2023-05-03T11:53:07 BDT" duration-ms="9" status="PASS">
+    <test started-at="2023-05-03T16:30:29 BDT" name="My Package" finished-at="2023-05-03T16:32:09 BDT" duration-ms="100317">
+      <class name="myTestSuite.NavList">
+        <test-method signature="Flight()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="Flight" finished-at="2023-05-03T16:32:09 BDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flight -->
+        <test-method signature="Hotel()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="Hotel" finished-at="2023-05-03T16:32:09 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Hotel -->
+        <test-method signature="HotelBooking()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="HotelBooking" finished-at="2023-05-03T16:32:09 BDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HotelBooking -->
+        <test-method signature="Train()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="Train" finished-at="2023-05-03T16:32:09 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Train -->
+      </class> <!-- myTestSuite.NavList -->
+      <class name="myTestSuite.E2Esearch">
+        <test-method signature="TestCase1()[pri:0, instance:myTestSuite.E2Esearch@4d154ccd]" started-at="2023-05-03T16:30:29 BDT" name="TestCase1" finished-at="2023-05-03T16:32:09 BDT" duration-ms="100253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase1 -->
-      </class> <!-- TestSuite1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- myTestSuite.E2Esearch -->
+    </test> <!-- My Package -->
+  </suite> <!-- Suite -->
 </testng-results>
