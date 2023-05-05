@@ -15,7 +15,7 @@ public class E2Esearch {
 		ops.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(ops);
 		
-		// go to the website
+		// Go to the Website
 		driver.get("https://www.easemytrip.com/");
 		
 		// Click on the from city drop-down
@@ -58,7 +58,6 @@ public class E2Esearch {
 		
 		// Confirm the TRAVELLERS & CLASS
 		driver.findElement(By.id("traveLer")).click();
-		
 		driver.findElement(By.xpath("//button[@class='srchBtnSe']")).click();
 		
 		// Print the traveller number with text
