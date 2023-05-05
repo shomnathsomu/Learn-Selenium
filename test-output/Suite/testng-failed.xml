@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="My Package(failed)">
+  <test thread-count="5" name="Search(failed)">
     <classes>
-      <class name="myTestSuite.E2Esearch">
+      <class name="myTestSuite.Assignment">
         <methods>
-          <include name="TestCase1"/>
+          <include name="AmazonSearch"/>
         </methods>
-      </class> <!-- myTestSuite.E2Esearch -->
+      </class> <!-- myTestSuite.Assignment -->
     </classes>
-  </test> <!-- My Package(failed) -->
+  </test> <!-- Search(failed) -->
 </suite> <!-- Failed suite [Suite] -->

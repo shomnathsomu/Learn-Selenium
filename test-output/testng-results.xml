@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-03T16:30:29 BDT" name="Suite" finished-at="2023-05-03T16:32:09 BDT" duration-ms="100317">
+  <suite started-at="2023-05-05T17:48:37 BDT" name="Suite" finished-at="2023-05-05T17:48:37 BDT" duration-ms="63">
     <groups>
+      <group name="Regression">
+        <method signature="Day1.GroupTest3()[pri:0, instance:myTestSuite.Day1@18df8434]" name="GroupTest3" class="myTestSuite.Day1"/>
+        <method signature="Day2.Train()[pri:0, instance:myTestSuite.Day2@1a6d8329]" name="Train" class="myTestSuite.Day2"/>
+        <method signature="Day3.GroupTest2()[pri:0, instance:myTestSuite.Day3@1a942c18]" name="GroupTest2" class="myTestSuite.Day3"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-05-03T16:30:29 BDT" name="My Package" finished-at="2023-05-03T16:32:09 BDT" duration-ms="100317">
-      <class name="myTestSuite.NavList">
-        <test-method signature="Flight()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="Flight" finished-at="2023-05-03T16:32:09 BDT" duration-ms="2" status="PASS">
+    <test started-at="2023-05-05T17:48:37 BDT" name="Search" finished-at="2023-05-05T17:48:37 BDT" duration-ms="63">
+      <class name="myTestSuite.Day1">
+        <test-method signature="GroupTest3()[pri:0, instance:myTestSuite.Day1@18df8434]" started-at="2023-05-05T17:48:37 BDT" name="GroupTest3" finished-at="2023-05-05T17:48:37 BDT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Flight -->
-        <test-method signature="Hotel()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="Hotel" finished-at="2023-05-03T16:32:09 BDT" duration-ms="1" status="PASS">
+        </test-method> <!-- GroupTest3 -->
+      </class> <!-- myTestSuite.Day1 -->
+      <class name="myTestSuite.Day3">
+        <test-method signature="GroupTest2()[pri:0, instance:myTestSuite.Day3@1a942c18]" started-at="2023-05-05T17:48:37 BDT" name="GroupTest2" finished-at="2023-05-05T17:48:37 BDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Hotel -->
-        <test-method signature="HotelBooking()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="HotelBooking" finished-at="2023-05-03T16:32:09 BDT" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HotelBooking -->
-        <test-method signature="Train()[pri:0, instance:myTestSuite.NavList@55a147cc]" started-at="2023-05-03T16:32:09 BDT" name="Train" finished-at="2023-05-03T16:32:09 BDT" duration-ms="1" status="PASS">
+        </test-method> <!-- GroupTest2 -->
+      </class> <!-- myTestSuite.Day3 -->
+      <class name="myTestSuite.Day2">
+        <test-method signature="Train()[pri:0, instance:myTestSuite.Day2@1a6d8329]" started-at="2023-05-05T17:48:37 BDT" name="Train" finished-at="2023-05-05T17:48:37 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Train -->
-      </class> <!-- myTestSuite.NavList -->
-      <class name="myTestSuite.E2Esearch">
-        <test-method signature="TestCase1()[pri:0, instance:myTestSuite.E2Esearch@4d154ccd]" started-at="2023-05-03T16:30:29 BDT" name="TestCase1" finished-at="2023-05-03T16:32:09 BDT" duration-ms="100253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase1 -->
-      </class> <!-- myTestSuite.E2Esearch -->
-    </test> <!-- My Package -->
+      </class> <!-- myTestSuite.Day2 -->
+    </test> <!-- Search -->
   </suite> <!-- Suite -->
 </testng-results>
