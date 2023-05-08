@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	
-  <!--
+  <!-- 
   <test thread-count="5" name="Search">
     <classes>
       <class name="myTestSuite.E2Esearch"/>
@@ -10,20 +10,32 @@
   </test>
   -->
   
+  <!--
   <test thread-count="5" name="Day2">
     <classes>
       <class name="myTestSuite.Day2">
 		  <methods>
-			  <!-- <exclude name="hotel"/> -->
-			  <!-- <include name="hotel.*"/> -->
+			  <exclude name="Resort"/>
+			  <include name="hotel.*"/>
 		  </methods>
       </class>
     </classes>
   </test>
+  -->
   
-  <test name="Day1">
+  <!-- Parameterizing -->
+  <test name="Day2">
+	  <parameter name="Trip" value="https://www.easemytrip.com/"/>
 	  <classes>
-		  <class name="myTestSuite.Day1"/>
+		  <class name="myTestSuite.Day2"/>
+	  </classes>
+  </test>
+  
+  <test name="Day3">
+	  <parameter name="AmazonHome" value="https://www.amazon.com/"/>
+	  <parameter name="Login/Username" value="Alex007"/>
+	  <classes>
+		  <class name="myTestSuite.Day3"/>
 	  </classes>
   </test>
   
