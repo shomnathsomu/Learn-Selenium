@@ -1,5 +1,6 @@
 package myTestSuite;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -8,12 +9,13 @@ import org.testng.annotations.Test;
 public class Day1 {
 	
 	@Test(dataProvider = "getData")
-	public void Test1() {
-		System.out.println("Day 1: Hello from day1, test1!");
+	public void Test1(String username, String password) {
+		System.out.println("Day 1: Username Password");
+		System.out.println("Day 1: " + username + " " + password);
 	}
 	
 	@BeforeTest
-	public void Test2() {
+	public void Test() {
 		System.out.println("Day 1: I will execute first from day1 test2!");
 	}
 	
@@ -23,8 +25,9 @@ public class Day1 {
 	}
 	
 	@Test(groups = {"Regression"})
-	public void GroupTest3() {
-		System.out.println("Day 1: This is GroupTest3 method on Day1!");
+	public void GroupTest() {
+		System.out.println("Day 1: This is group method on Day1!");
+		Assert.assertTrue(false); // to make a Test Case failed forcefully
 	}
 	
 	@DataProvider
