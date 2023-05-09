@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class E2Esearch {
-
+	
 	@Test
 	public void TestCase1() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
@@ -15,7 +15,7 @@ public class E2Esearch {
 		ops.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(ops);
 		
-		// Go to the Website
+		// Go to the website
 		driver.get("https://www.easemytrip.com/");
 		
 		// Click on the from city drop-down
@@ -31,7 +31,7 @@ public class E2Esearch {
 		
 		driver.findElement(By.id("dvfarecal")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@id='dvcalendar']/div/div[1]/div/div[3]/ul/li[@class='active-date']")).click();
+		driver.findElement(By.xpath("//div[@id='dvcalendar']/div[1]/div[1]/div[1]/div[4]/ul/li[@class='active-date']")).click();
 		
 		// Handle the latest drop-down looping UI
 		// Click on the TRAVELLER & CLASS drop-down
