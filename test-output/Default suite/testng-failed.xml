@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="myTestSuite.Assignment">
+      <class name="myTestSuite.E2Esearch">
         <methods>
-          <include name="AmazonSearch"/>
+          <include name="TestCase1"/>
         </methods>
-      </class> <!-- myTestSuite.Assignment -->
+      </class> <!-- myTestSuite.E2Esearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

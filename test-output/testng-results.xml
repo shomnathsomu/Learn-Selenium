@@ -1,34 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-05T17:48:37 BDT" name="Suite" finished-at="2023-05-05T17:48:37 BDT" duration-ms="63">
+  <suite started-at="2023-05-08T16:18:57 BDT" name="Suite" finished-at="2023-05-08T16:18:57 BDT" duration-ms="213">
     <groups>
       <group name="Regression">
-        <method signature="Day1.GroupTest3()[pri:0, instance:myTestSuite.Day1@18df8434]" name="GroupTest3" class="myTestSuite.Day1"/>
-        <method signature="Day2.Train()[pri:0, instance:myTestSuite.Day2@1a6d8329]" name="Train" class="myTestSuite.Day2"/>
-        <method signature="Day3.GroupTest2()[pri:0, instance:myTestSuite.Day3@1a942c18]" name="GroupTest2" class="myTestSuite.Day3"/>
+        <method signature="Day2.Train()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" name="Train" class="myTestSuite.Day2"/>
+        <method signature="Day3.LaptopTest()[pri:0, instance:myTestSuite.Day3@d737b89]" name="LaptopTest" class="myTestSuite.Day3"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-05-05T17:48:37 BDT" name="Search" finished-at="2023-05-05T17:48:37 BDT" duration-ms="63">
-      <class name="myTestSuite.Day1">
-        <test-method signature="GroupTest3()[pri:0, instance:myTestSuite.Day1@18df8434]" started-at="2023-05-05T17:48:37 BDT" name="GroupTest3" finished-at="2023-05-05T17:48:37 BDT" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GroupTest3 -->
-      </class> <!-- myTestSuite.Day1 -->
-      <class name="myTestSuite.Day3">
-        <test-method signature="GroupTest2()[pri:0, instance:myTestSuite.Day3@1a942c18]" started-at="2023-05-05T17:48:37 BDT" name="GroupTest2" finished-at="2023-05-05T17:48:37 BDT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GroupTest2 -->
-      </class> <!-- myTestSuite.Day3 -->
+    <test started-at="2023-05-08T16:18:57 BDT" name="Day2" finished-at="2023-05-08T16:18:57 BDT" duration-ms="75">
       <class name="myTestSuite.Day2">
-        <test-method signature="Train()[pri:0, instance:myTestSuite.Day2@1a6d8329]" started-at="2023-05-05T17:48:37 BDT" name="Train" finished-at="2023-05-05T17:48:37 BDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="HotelBooking()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="HotelBooking" finished-at="2023-05-08T16:18:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HotelBooking -->
+        <test-method is-config="true" signature="Prerequisite()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="Prerequisite" finished-at="2023-05-08T16:18:57 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Prerequisite -->
+        <test-method signature="Resort(java.lang.String)[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="Resort" finished-at="2023-05-08T16:18:57 BDT" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.easemytrip.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Resort -->
+        <test-method is-config="true" signature="Conclusion()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="Conclusion" finished-at="2023-05-08T16:18:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Conclusion -->
+        <test-method signature="Train()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="Train" finished-at="2023-05-08T16:18:57 BDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Train -->
+        <test-method is-config="true" signature="Prerequisite()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="Prerequisite" finished-at="2023-05-08T16:18:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Prerequisite -->
+        <test-method is-config="true" signature="Conclusion()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="Conclusion" finished-at="2023-05-08T16:18:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Conclusion -->
+        <test-method is-config="true" signature="Flight()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="Flight" finished-at="2023-05-08T16:18:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flight -->
       </class> <!-- myTestSuite.Day2 -->
-    </test> <!-- Search -->
+    </test> <!-- Day2 -->
+    <test started-at="2023-05-08T16:18:57 BDT" name="Day3" finished-at="2023-05-08T16:18:57 BDT" duration-ms="24">
+      <class name="myTestSuite.Day3">
+        <test-method signature="MobileTest()[pri:0, instance:myTestSuite.Day3@d737b89]" started-at="2023-05-08T16:18:57 BDT" name="MobileTest" finished-at="2023-05-08T16:18:57 BDT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileTest -->
+        <test-method signature="LaptopTest()[pri:0, instance:myTestSuite.Day3@d737b89]" started-at="2023-05-08T16:18:57 BDT" name="LaptopTest" finished-at="2023-05-08T16:18:57 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaptopTest -->
+        <test-method signature="UrlTest(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day3@d737b89]" started-at="2023-05-08T16:18:57 BDT" name="UrlTest" finished-at="2023-05-08T16:18:57 BDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.amazon.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Alex007]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UrlTest -->
+        <test-method signature="ApiLogin()[pri:0, instance:myTestSuite.Day3@d737b89]" started-at="2023-05-08T16:18:57 BDT" name="ApiLogin" finished-at="2023-05-08T16:18:57 BDT" depends-on-methods="myTestSuite.Day3.MobileTest" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApiLogin -->
+      </class> <!-- myTestSuite.Day3 -->
+      <class name="myTestSuite.Day2">
+        <test-method is-config="true" signature="PrefaceSuite()[pri:0, instance:myTestSuite.Day2@2a7f1f10]" started-at="2023-05-08T16:18:57 BDT" name="PrefaceSuite" finished-at="2023-05-08T16:18:57 BDT" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrefaceSuite -->
+      </class> <!-- myTestSuite.Day2 -->
+    </test> <!-- Day3 -->
   </suite> <!-- Suite -->
 </testng-results>

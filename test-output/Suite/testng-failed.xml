@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Search(failed)">
+  <test thread-count="5" name="Day1(failed)">
+    <parameter name="Trip" value="https://www.easemytrip.com/"/>
     <classes>
-      <class name="myTestSuite.Assignment">
+      <class name="myTestSuite.Day3">
         <methods>
-          <include name="AmazonSearch"/>
+          <include name="UrlTest"/>
         </methods>
-      </class> <!-- myTestSuite.Assignment -->
+      </class> <!-- myTestSuite.Day3 -->
     </classes>
-  </test> <!-- Search(failed) -->
+  </test> <!-- Day1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
