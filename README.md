@@ -59,3 +59,33 @@
 ### TestCase10
 1. Handling static dropdown with select webdriver API
 2. Select static dropdown by visibleText/Index/Value
+
+### TestCase11
+1. Handle the latest drop-down looping UI
+2. Handling Java alerts
+3. Parent-Child relationship locator to Identify the objects Uniquely
+
+### TestCase12
+1. Select the From drop-down using absolute Xpath
+2. Handle the latest drop-down looping UI
+
+### TestCase13
+1. Importance of Assertions in Automation testing and how to use them
+
+### myTestSuite.Assignment
+1. Simple Amazon End-to-end search
+
+### myTestSuite.Day1.Day2.Day3
+### testng.xml && testng2.xml && testng3.xml
+1. Running testcases in TestNG without Java compiler
+2. Prioritizing the Testcases with TestNG
+3. xml file in Testng configuration
+4. Include and  Exclude Mechanism to control testcases
+5. Executing the Testcases at Package level with regex
+6. TestNg Annotations
+7. Groups functionality in TestNG
+8. Annotations helper attributes with examples
+9. Parameterising from TestNG xml file
+10. DataProvider Annotation -Parameterizing Testcases
+11. Listeners Interface in TestNG framework
+12. Running Tests in parallel and generating Reports
