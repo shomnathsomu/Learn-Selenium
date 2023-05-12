@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-09T17:00:04 BDT" name="Suite" finished-at="2023-05-09T17:00:04 BDT" duration-ms="69">
+  <suite started-at="2023-05-10T10:22:45 BDT" name="Suite" finished-at="2023-05-10T10:22:45 BDT" duration-ms="75">
     <groups>
       <group name="Regression">
         <method signature="Day1.GroupTest()[pri:0, instance:myTestSuite.Day1@6e6f2380]" name="GroupTest" class="myTestSuite.Day1"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-05-09T17:00:04 BDT" name="Day1" finished-at="2023-05-09T17:00:04 BDT" duration-ms="69">
+    <test started-at="2023-05-10T10:22:45 BDT" name="Day1" finished-at="2023-05-10T10:22:45 BDT" duration-ms="75">
       <class name="myTestSuite.Day1">
-        <test-method is-config="true" signature="PrefaceSuite()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-09T17:00:04 BDT" name="PrefaceSuite" finished-at="2023-05-09T17:00:04 BDT" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="PrefaceSuite()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="PrefaceSuite" finished-at="2023-05-10T10:22:45 BDT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PrefaceSuite -->
-        <test-method is-config="true" signature="Test()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-09T17:00:04 BDT" name="Test" finished-at="2023-05-09T17:00:04 BDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Test()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test" finished-at="2023-05-10T10:22:45 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
-        <test-method signature="GroupTest()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-09T17:00:04 BDT" name="GroupTest" finished-at="2023-05-09T17:00:04 BDT" duration-ms="15" status="FAIL">
+        <test-method signature="GroupTest()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="GroupTest" finished-at="2023-05-10T10:22:45 BDT" duration-ms="15" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -58,7 +58,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GroupTest -->
-        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-09T17:00:04 BDT" name="Test1" data-provider="getData" finished-at="2023-05-09T17:00:04 BDT" duration-ms="2" status="PASS">
+        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test1" data-provider="getData" finished-at="2023-05-10T10:22:45 BDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-09T17:00:04 BDT" name="Test1" data-provider="getData" finished-at="2023-05-09T17:00:04 BDT" duration-ms="1" status="PASS">
+        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test1" data-provider="getData" finished-at="2023-05-10T10:22:45 BDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,7 +90,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-09T17:00:04 BDT" name="Test1" data-provider="getData" finished-at="2023-05-09T17:00:04 BDT" duration-ms="1" status="PASS">
+        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test1" data-provider="getData" finished-at="2023-05-10T10:22:45 BDT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
