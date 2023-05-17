@@ -89,3 +89,6 @@
 10. DataProvider Annotation -Parameterizing Testcases
 11. Listeners Interface in TestNG framework
 12. Running Tests in parallel and generating Reports
+
+### myTestSuite.GlobalValuesDrive
+1. Write Global parameters with java code
