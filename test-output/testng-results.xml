@@ -1,112 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-10T10:22:45 BDT" name="Suite" finished-at="2023-05-10T10:22:45 BDT" duration-ms="75">
+  <suite started-at="2023-09-20T12:40:47 BDT" name="Default suite" finished-at="2023-09-20T12:40:59 BDT" duration-ms="11711">
     <groups>
-      <group name="Regression">
-        <method signature="Day1.GroupTest()[pri:0, instance:myTestSuite.Day1@6e6f2380]" name="GroupTest" class="myTestSuite.Day1"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-05-10T10:22:45 BDT" name="Day1" finished-at="2023-05-10T10:22:45 BDT" duration-ms="75">
-      <class name="myTestSuite.Day1">
-        <test-method is-config="true" signature="PrefaceSuite()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="PrefaceSuite" finished-at="2023-05-10T10:22:45 BDT" duration-ms="14" status="PASS">
+    <test started-at="2023-09-20T12:40:47 BDT" name="Default test" finished-at="2023-09-20T12:40:59 BDT" duration-ms="11711">
+      <class name="myTestSuite.E2Esearch">
+        <test-method signature="TestCase1()[pri:0, instance:myTestSuite.E2Esearch@429bffaa]" started-at="2023-09-20T12:40:47 BDT" name="TestCase1" finished-at="2023-09-20T12:40:59 BDT" duration-ms="11672" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PrefaceSuite -->
-        <test-method is-config="true" signature="Test()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test" finished-at="2023-05-10T10:22:45 BDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method signature="GroupTest()[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="GroupTest" finished-at="2023-05-10T10:22:45 BDT" duration-ms="15" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at myTestSuite.Day1.GroupTest(Day1.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GroupTest -->
-        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test1" data-provider="getData" finished-at="2023-05-10T10:22:45 BDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Alex]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test1" data-provider="getData" finished-at="2023-05-10T10:22:45 BDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Robert]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method signature="Test1(java.lang.String,java.lang.String)[pri:0, instance:myTestSuite.Day1@6e6f2380]" started-at="2023-05-10T10:22:45 BDT" name="Test1" data-provider="getData" finished-at="2023-05-10T10:22:45 BDT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tom]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-      </class> <!-- myTestSuite.Day1 -->
-    </test> <!-- Day1 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- TestCase1 -->
+      </class> <!-- myTestSuite.E2Esearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
