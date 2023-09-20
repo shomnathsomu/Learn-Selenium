@@ -3,12 +3,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestCase1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		// Chrome webdriver => driver directory
 		// webdriver.chrome.driver => D:\chromedriver_win32\chromedriver.exe
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver-win64\\chromedriver.exe");
 		
 		// Create driver object for the Chrome browser
 		WebDriver driver = new ChromeDriver();
@@ -22,14 +22,15 @@ public class TestCase1 {
 		
 		//System.out.println(driver.getPageSource()); // print the page source code
 		
-		driver.get("https://www.oxfordlearnersdictionaries.com/");
+		driver.get("https://www.spacex.com/");
+		Thread.sleep(10000);
 		
 		driver.navigate().back();
 		//driver.navigate().forward();
 		
 		//driver.close(); // it closes the current browser only
 		//driver.quit(); // it closes all the browsers opened by Selenium script
-				
+
 	}
 
 }
