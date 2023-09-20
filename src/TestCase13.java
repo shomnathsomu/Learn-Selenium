@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
 
@@ -12,11 +12,13 @@ public class TestCase13 {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		
-		ChromeOptions ops = new ChromeOptions();
-		ops.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new ChromeDriver(ops);
+		
+		//ChromeOptions ops = new ChromeOptions();
+		//ops.addArguments("--remote-allow-origins=*");
+		//WebDriver driver = new ChromeDriver(ops);
 		
 		// go to the website
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
@@ -41,14 +43,15 @@ public class TestCase13 {
 		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 		Assert.assertEquals(driver.findElements(By.cssSelector("input[type='checkbox']")).size(), 6); // "6" will be counted as string
 		
-		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_view_date1']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-hover")).click();
+		//driver.findElement(By.xpath("//input[@id='ctl00_mainContent_view_date1']")).click();
+		//Thread.sleep(2000);
+		//driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-hover")).click();
 		
 		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 		Thread.sleep(2000);
+		
+		// Click on the round trip radio button
 		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
-		//System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 		
 		if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1")) {
 			System.out.print("Return date enabled");
