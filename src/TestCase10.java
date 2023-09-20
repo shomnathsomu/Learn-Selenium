@@ -1,7 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -13,12 +13,8 @@ public class TestCase10 {
 		//System.setProperty("webdriver.gecko.driver", "D:\\Webdrivers\\geckodriver-v0.32.0-win64\\geckodriver.exe");
 		//WebDriver driver = new FirefoxDriver();
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
-		//WebDriver driver = new ChromeDriver();
-		
-		ChromeOptions ops = new ChromeOptions();
-		ops.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new ChromeDriver(ops);
+		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
