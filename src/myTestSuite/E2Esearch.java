@@ -1,68 +1,82 @@
 package myTestSuite;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class E2Esearch {
 	
 	@Test
 	public void TestCase1() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
-		ChromeOptions ops = new ChromeOptions();
-		ops.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new ChromeDriver(ops);
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "D:\\Webdrivers\\chromedriver-win64\\chromedriver.exe");
 		
-		// Go to the website
-		driver.get("https://www.easemytrip.com/");
+		WebDriver driver = new ChromeDriver();
 		
-		// Click on the from city drop-down
-		driver.findElement(By.id("frmcity")).click();
-		Thread.sleep(2000);
-		// Parent-Child relationship locator to Identify the objects Uniquely
-		driver.findElement(By.xpath("//div[@id='fromautoFill'] //span[@id='spn6']")).click();
+		driver.get("https://www.gozayaan.com/");
 		
-		// Click on the To city drop-down
-		driver.findElement(By.id("tocity")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@id='toautoFill'] //span[@id='spn2']")).click();
-		
-		driver.findElement(By.id("dvfarecal")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@id='dvcalendar']/div[1]/div[1]/div[1]/div[4]/ul/li[@class='active-date']")).click();
-		
-		// Handle the latest drop-down looping UI
-		// Click on the TRAVELLER & CLASS drop-down
-		driver.findElement(By.id("trvlr_colm")).click();
-		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-		// Select 4 adults
-		for (int i = 0; i < 3; i++) {
-			driver.findElement(By.xpath("//div[@id='field1']/button[2]")).click();
-		}
-		// Reduce 1 adult
-		driver.findElement(By.xpath("//div[@id='field1']/button[1]")).click();
-		
-		// Select 2 infants
-		for (int i = 0; i < 4; i++) {
-			driver.findElement(By.xpath("//div[@id='field3']/button[2]")).click();
-		}
-		
-		// Handling Java alerts
-		System.out.println(driver.switchTo().alert().getText());
-		driver.switchTo().alert().accept();
-		
-		// Select the business class radio button
-		driver.findElement(By.id("lbBusiness")).click();
-		
-		// Confirm the TRAVELLERS & CLASS
-		driver.findElement(By.id("traveLer")).click();
-		driver.findElement(By.xpath("//button[@class='srchBtnSe']")).click();
-		
-		// Print the traveller number with text
-		//System.out.println(driver.findElement(By.id("ptravlrNo")).getText());
-		
-		//driver.close();
+		// Explicitly wait for the element to be click-able
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement roundWayRadio = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='searchbar']/div[3]/div[1]/label[2]/span[contains(text(),'Round Way')]")));
+        roundWayRadio.click();
+        
+        driver.findElement(By.xpath("//div[@id='searchbar']/div[3]/div[2]/div/span[contains(text(),'From')]")).click();
+        
+        WebElement fromCity = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='airport-suggestion'] //div[contains(text(),'CXB')]")));
+        fromCity.click();
+        
+        WebElement toCity = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='airport-suggestion'] //div[contains(text(), 'JFK')]")));
+        toCity.click();
+        
+        WebElement journeyDate = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='calendar left'] //span[@class='day selected']")));
+        journeyDate.click();
+        
+        // Move the mouse cursor to the specific element
+        Actions actions = new Actions(driver);
+        WebElement hoverReturnDate = driver.findElement(By.xpath("//div[@class='calendar right'] //span[contains(text(), '30')]"));
+        actions.moveToElement(hoverReturnDate).perform();
+        
+        Thread.sleep(2000);
+        WebElement returnDate = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='calendar right'] //span[@class='day shadow-range shadow-range-end']")));
+        returnDate.click();
+        
+        WebElement travelerClass = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.box.traveler")));
+        travelerClass.click();
+        
+        // Choose adults
+        driver.findElement(By.xpath("//div[@id='guestPicker']/div[2]/div[1]/div[2]/button[2]")).click();
+        
+        // Choose children
+        driver.findElement(By.xpath("//div[@id='guestPicker']/div[2]/div[2]/div[1]/div[2]/button[2]")).click();
+       
+        
+        //driver.findElement(By.xpath("//select[@id='__BVID__131']")).click();
+        Select s = new Select(driver.findElement(By.cssSelector("select.brand-input.small.custom-select")));
+		s.selectByValue("3");
+        
+        // Choose infants
+        driver.findElement(By.xpath("//div[@id='guestPicker']/div[2]/div[3]/div[2]/button[2]")).click();
+        
+        // Select traveler class
+        WebElement tClass = driver.findElement(By.xpath("//div[@class='radio-container'] //span[contains(text(), 'Economy')]"));
+        
+        // Check if the radio button is already selected (optional)
+        if (!tClass.isSelected()) {
+        	tClass.click();
+        }
+        
+        // Click the traveler Done button
+        driver.findElement(By.xpath("//div[@id='guestPicker']/div[3]/div[3]/button")).click();
+        
+        driver.findElement(By.xpath("//div[@class='search-btn-container']/button")).click();
 	}
 }
