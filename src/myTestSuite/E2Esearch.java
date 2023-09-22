@@ -24,6 +24,8 @@ public class E2Esearch {
 		
 		driver.get("https://www.gozayaan.com/");
 		
+		driver.manage().window().maximize();
+		
 		// Explicitly wait for the element to be click-able
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement roundWayRadio = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='searchbar']/div[3]/div[1]/label[2]/span[contains(text(),'Round Way')]")));
@@ -78,5 +80,7 @@ public class E2Esearch {
         driver.findElement(By.xpath("//div[@id='guestPicker']/div[3]/div[3]/button")).click();
         
         driver.findElement(By.xpath("//div[@class='search-btn-container']/button")).click();
+        
+        //driver.close();
 	}
 }
